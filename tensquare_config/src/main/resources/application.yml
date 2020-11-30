@@ -1,0 +1,17 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: tensquare-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/auberful/tensquare_dev.git
+  rabbitmq:
+    host: 192.168.88.130
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
